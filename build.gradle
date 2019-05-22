@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'com.cn'
+version '1.0-SNAPSHOT'
+
+
+apply plugin : 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile (
+            'io.netty:netty-bom:4.1.36.Final',
+            'org.apache.thrift:libthrift:0.12.0'
+    )
+
+}
